@@ -19,49 +19,60 @@
     <main>
         <section class="container mt-5">
             <div class=" row gx-5">
+                <!-- shoping img start hear -->
                 <div class=" col-lg-7 h-50">
                     <img class="img-fluid" src="img/shoping2.jpg">
                 </div>
                  <div class="col">
-                     <!-- input start hear -->
+                     <!-- input fild start hear -->
                    
                       <div class="row mb-5">
                           <h3 class="text-center m-2 text-warning">Income</h3>
                         <label class="col-sm-2 col-form-label fw-bold">Total:</label>
                         <div class="col-sm-10">
-                          <input type="number" class="form-control" id="colFormLabel" >
+                          <input id="total-amount" type="number" class="form-control"  >
                         </div>
                       </div>
                       <div class="row mb-5">
                         <h3 class="text-center m-1 text-warning">experianc</h3>
                         <label class="col-sm-2 col-form-label fw-bold">Shop:</label>
                         <div class="col-sm-10">
-                          <input type="number" class="form-control" id="colFormLabel" >
+                          <input id="shop" type="number" class="form-control"  >
                         </div>
                       </div>
                       <div class="row mb-5">
-                        <label class="col-sm-2 col-form-label fw-bold">Grocar:</label>
+                        <label  class="col-sm-2 col-form-label fw-bold">Grocar:</label>
                         <div class="col-sm-10">
-                          <input type="number" class="form-control" id="colFormLabel" >
+                          <input id="grocar" type="number" class="form-control" id="colFormLabel" >
                         </div>
                       </div>
                       <div class="row mb-5">
-                        <label class="col-sm-2 col-form-label fw-bold">Rent:</label>
+                        <label  class="col-sm-2 col-form-label fw-bold">Rent:</label>
                         <div class="col-sm-10">
-                          <input type="number" class="form-control" id="colFormLabel" >
+                          <input id="rent" type="number" class="form-control"  >
                         </div>
                       </div>
+                      <!-- update balance total -->
                      <p class="text-center">
-                        <button type="button" class="btn btn-secondary ">Totalcalculet</button>
+                        <button onclick="hendelar()" type="button" class="btn btn-primary fw-bold ">Totalcalculet</button>
                      </p>
-                     <h4 class="text-center m-5">Total:<span>500</span></h4>
-                     <h4 class="text-center ">Balence:<span>500</span></h4>
+                     <h4 class="text-center m-4 fw-bold">Total:<span id="total">500</span></h4>
+                     <h4 class="text-center fw-bold">Balence:<span id="balenc">500</span></h4>
                      
-                
+                     <div class="d-flex justify-content-evenly align-items-center mt-5">
+                         <p class="fw-bold fw-bold">Save</p>
+                         <p class="btn btn-primary fw-bold">20%</p>
+                         <p class="fw-bold">%</p>
+                         <p class="btn btn-primary fw-bold">save</p>
+                     </div>
+                     <h3 class="text-center mt-5  fw-bold">Total Discount:<span>500</span></h3>
+                     <h3 class="text-center mt-4  fw-bold">Total Balence:<span>500</span></h3>
                  </div>
                 </div>
             </div>
         </section>
     </main>
+    <!-- javascript link  -->
+    <script src="app.js"></script>
 </body>
 </html>
