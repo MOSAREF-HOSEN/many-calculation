@@ -11,8 +11,8 @@
 <body>
     <!-- header start -->
     <header>
-        <div class="container mx-auto mt-3 fw-bold text-warning " style="width: 400px;">
-            <h1>Many Market</h1>
+        <div class="container mx-auto mt-3 fw-bold text-success " style="width: 400px;">
+            <h1>Many calculetion</h1>
         </div>
     </header>
     <!-- main start hear -->
@@ -21,58 +21,59 @@
             <div class=" row gx-5">
                 <!-- shoping img start hear -->
                 <div class=" col-lg-7 h-50">
-                    <img class="img-fluid" src="img/shoping2.jpg">
+                    <img class="img-fluid" src="img/1.jpg">
                 </div>
                  <div class="col">
                      <!-- input fild start hear -->
                    
                       <div class="row mb-5">
-                          <h3 class="text-center m-2 text-warning">Income</h3>
+                          <h3 class="text-center m-2 text-success">Income</h3>
                         <label class="col-sm-2 col-form-label fw-bold">Total:</label>
                         <div class="col-sm-10">
                           <input id="total-amount" type="number" class="form-control" value="" >
                         </div>
                       </div>
                       <div class="row mb-5">
-                        <h3 class="text-center m-1 text-warning">experianc</h3>
+                        <h3 class="text-center m-1 text-success">experianc</h3>
                         <label class="col-sm-2 col-form-label fw-bold">Shop:</label>
                         <div class="col-sm-10">
-                          <input id="shop" type="number" class="form-control"  >
+                          <input id="shop" type="number" class="form-control" value="" >
                         </div>
                       </div>
                       <div class="row mb-5">
                         <label  class="col-sm-2 col-form-label fw-bold">Grocar:</label>
                         <div class="col-sm-10">
-                          <input id="grocar" type="number" class="form-control"  >
+                          <input id="grocar" type="number" class="form-control" value="" >
                         </div>
                       </div>
                       <div class="row mb-5">
                         <label  class="col-sm-2 col-form-label fw-bold">Rent:</label>
                         <div class="col-sm-10">
-                          <input id="rent" type="number" class="form-control"  >
+                          <input id="rent" type="number" class="form-control" value="" >
                         </div>
                       </div>
                       <!-- update balance total -->
                      <p class="text-center">
-                        <button id="calculetar" type="button" class="btn btn-primary fw-bold ">Totalcalculet</button>
+                        <button onclick="hendelClick()" id="calculetar" type="button" class="btn btn-primary fw-bold ">Totalcalculet</button>
                      </p>
-                     <h4 class="text-center m-4 fw-bold">Total:<span id="total">500</span></h4>
-                     <h4 class="text-center fw-bold">Balence:<span id="balenc">500</span></h4>
+                     <h4 class="text-center m-4 fw-bold">Total:<span id="total">00</span></h4>
+                     <h4 class="text-center fw-bold">Balence:<span id="balenc">00</span></h4>
                      
                      <div class="d-flex justify-content-evenly align-items-center mt-5">
                          <p class="fw-bold fw-bold">Save</p>
-                         <p class="btn btn-primary fw-bold">20%</p>
+                         <p class="btn btn-primary fw-bold"><span id="parsen">50</span>%</p>
                          <p class="fw-bold">%</p>
-                         <p class="btn btn-primary fw-bold">save</p>
+                         <p onclick="saveAmount()" class="btn btn-primary fw-bold">save</p>
                      </div>
-                     <h3 class="text-center mt-5  fw-bold">Total Discount:<span>500</span></h3>
-                     <h3 class="text-center mt-4  fw-bold">Total Balence:<span>500</span></h3>
+                     <h3 class="text-center mt-5  fw-bold">Total Discount:<span id="discount">00</span></h3>
+                     <h3 class="text-center mt-4  fw-bold">Total Balence:<span id="savebalenc">00</span></h3>
                  </div>
                 </div>
             </div>
         </section>
     </main>
     <!-- javascript link  -->
+    <!-- <script src="index.js"></script> -->
     <script src="app.js"></script>
 </body>
 </html>

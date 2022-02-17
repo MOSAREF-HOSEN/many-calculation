@@ -1,26 +1,10 @@
 
 
 
-    // let totalAmount = document.getElementById('total-amount');
-    // let shopAmount = document.getElementById('shop');
-    // let grocarAmount = document.getElementById('grocar');
-    // let rentAmount = document.getElementById('rent');
-    // let totalprice = document.getElementById('total');
-    
-// function hendelar(){
-    //update shoping parice 
-    // let shopValue = shopAmount.value;
-    // let grocarValue = grocarAmount.value;
-    // let rentValue = rentAmount.value;
-    // totalprice.innerText = parseInt(shopValue)+parseInt(grocarValue)+parseInt(rentValue);
-    // console.log(totalprice);
-
-//update main total
-// let totalAmountValue = totalAmount.value;
-// }
+  
 
 document.getElementById('calculetar').addEventListener('click',function(){
-    
+
     let shopAmount = document.getElementById('shop');
     let shopValue = shopAmount.value;
     let grocarAmount = document.getElementById('grocar');
@@ -35,20 +19,33 @@ document.getElementById('calculetar').addEventListener('click',function(){
 //update total
     let totalAmount = document.getElementById('total-amount');
     let totalAmountValu = parseInt(totalAmount.value)-parseInt(totalprice.innerText);
-
+    
     let balenceTotal = document.getElementById('balenc');
      balenceTotal.innerText = totalAmountValu;
-     console.log(balenceTotal);
-
-
     
-
 
      //clear input filt
      shopAmount.value = '';
      grocarAmount.value = '';
      rentAmount.value = '';
      totalAmount.value = '';
-     
-     
 })
+
+
+
+    let totalparsentens = document.getElementById('total');
+    let parsenAmount = document.getElementById('parsen');
+    let discount = document.getElementById('discount');
+
+    function saveAmount(){
+     let totalAmountValu = parseInt(totalparsentens.innerText);
+     let parsent = parseInt(parsenAmount.innerText);
+     let parsencal = totalAmountValu * parsent;
+     totalpar = parsencal
+
+     
+     console.log(parsencal);
+    }
+
+
+    
